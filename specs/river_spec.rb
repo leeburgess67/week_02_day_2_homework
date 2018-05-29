@@ -30,10 +30,8 @@ class RiverTest < MiniTest::Test
 
   def test_river_should_lose_fish_when_bear_takes_from_river
     @river.add_fish(@fish1)
-    p @river
     @bear.take_fish_from_river(@fish1)
     @river.lose_a_fish_when_bear_takes(@fish1)
-    p @river
     assert_equal(0, @river.check_how_many_fish_in_river())
   end
 

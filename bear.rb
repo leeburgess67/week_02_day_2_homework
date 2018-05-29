@@ -1,3 +1,4 @@
+require_relative ("./river.rb")
 class Bear
 
 
@@ -19,6 +20,15 @@ attr_reader :name, :stomach
     return @stomach.count
   end
 
+
+  def roar
+    return "Roar!"
+  end
+
+
+  def count_bear_food
+    rerurn @stomach.count()
+  end
 
 
 

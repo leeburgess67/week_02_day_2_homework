@@ -1,3 +1,4 @@
+require_relative ("./fish.rb")
 class River
 
 attr_reader :name, :fish_in_river
